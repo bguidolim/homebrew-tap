@@ -2,7 +2,7 @@ class MyClaudeSetup < Formula
   desc "Configure Claude Code with MCP servers, plugins, skills, and hooks"
   homepage "https://github.com/bguidolim/MyClaudeSetup"
   url "https://github.com/bguidolim/MyClaudeSetup/releases/download/2.0.0/mcs-2.0.0-macos-universal.tar.gz"
-  sha256 "aaa9660c5e9bdde06c8af3aab8484d32733a99759e904cf67b82436b7cd91619"
+  sha256 "38d14de239a6e71acba3f1a59a322271035d1f91d064b3e08cca330ea4df600e"
   version "2.0.0"
   license "MIT"
 
