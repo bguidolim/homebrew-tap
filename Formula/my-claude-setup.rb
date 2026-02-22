@@ -1,15 +1,19 @@
 class MyClaudeSetup < Formula
-  desc "My Claude Code setup with tweaks for iOS development"
-  homepage "https://github.com/bguidolim/MyClaudeSetup"
-  url "https://github.com/bguidolim/MyClaudeSetup/releases/download/2.0.0/mcs-2.0.0-macos-universal.tar.gz"
-  sha256 "9224c329a0e5cb253fbd0b7c64cb7c8fe3dcdb4485e97b695b84f006bac8fc66"
+  desc "Configure Claude Code with MCP servers, plugins, skills, and hooks"
+  homepage "https://github.com/bguidolim/my-claude-setup"
+  url "https://github.com/bguidolim/my-claude-setup/releases/download/2.0.0/mcs-2.0.0-macos-universal.tar.gz"
+  sha256 "49589d67239abaac9f7acc83046c9143fae1a756ae436d3f46bfaaeb797a9d7b"
+  version "2.0.0"
   license "MIT"
 
   def install
-    bin.install "mcs"
+    libexec.install "mcs"
+    libexec.install "my-claude-setup_mcs.bundle"
+    bin.install_symlink libexec/"mcs"
+    bin.install_symlink libexec/"mcs" => "my-claude-setup"
   end
 
   test do
-    system "#{bin}/mcs", "--version"
+    assert_match "My Claude Setup", shell_output("#{bin}/mcs --help")
   end
 end
