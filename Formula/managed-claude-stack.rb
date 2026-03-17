@@ -1,9 +1,9 @@
 class ManagedClaudeStack < Formula
   desc "Configure Claude Code with MCP servers, plugins, skills, and hooks"
   homepage "https://github.com/bguidolim/mcs"
-  url "https://github.com/bguidolim/mcs/releases/download/2026.3.6/mcs-2026.3.6-macos-universal.tar.gz"
-  sha256 "0ed2265004d2b3777adf3ef8f69035e7c6ed15a5475e2291aeb576fc9a70b91d"
-  version "2026.3.6"
+  url "https://github.com/bguidolim/mcs/releases/download/2026.3.17/mcs-2026.3.17-macos-universal.tar.gz"
+  sha256 "ae89dae9a7ae9030dc151fe185bae04fe715c3c569f05eba6966125d79f1c42e"
+  version "2026.3.17"
   license "MIT"
 
   def install
